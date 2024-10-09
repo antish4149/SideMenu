@@ -1,0 +1,107 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+.main_box{
+    height:100vh;
+    background-image:url(photo.jpg);
+    background-size: cover;
+    
+}
+.sidebar_menu{
+    position:fixed;
+    left:-300px;
+    height: 100vh;
+    width:20%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow:0 0 6px rgba(255, 255, 255, 0.5);
+}
+.main_box input[type="checkbox"]{
+    display:none;
+}
+.btn_one{
+    color:white;
+    font-size: 30px;
+    font-weight: 700;
+    position:absolute;
+    left:16px;
+    line-height: 60px;
+}
+.sidebar_menu .logo{
+    position:absolute;
+    width:100%;
+    line-height: 60px;
+    box-shadow:0 0 4px rgba(255, 255, 255, 0.5);
+}
+.sidebar_menu .logo a{
+    position:absolute;
+    left:40px;
+    color:white;
+    text-decoration:none;
+    font-size: 23px;
+    font-family: "Matemasie", sans-serif; ;
+}
+.btn_two i{
+    font-size: 20px;
+    position:absolute;
+    top:24px;
+    left:240px;
+    color:white;
+    cursor: pointer;
+}
+.sidebar_menu .menu{
+    color:white;
+    position: absolute;
+    width:100%;
+    top:80px;
+
+}
+.sidebar_menu .menu  i{
+    margin-right: 8px;
+}
+.sidebar_menu .menu li  i, a{
+    text-decoration: none;
+    color: white;
+    
+}
+.sidebar_menu .menu  li{
+    padding:14px 20px;
+    margin-top: 6px;
+}
+
+.sidebar_menu .menu  li:hover{
+    box-shadow: 0 0 3px rgba(243, 238, 238, 0.774);
+}
+ .sidebar_menu .social_media {
+    position:absolute;
+    bottom:50px;
+    left:80px;
+} 
+.sidebar_menu .social_media i{
+    color: rgba(255, 255, 255, 0.192);
+    padding: 0 5px;
+    font-size: 20px;
+}
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    font-size: 30px;
+   
+}
+.btn_one i:hover{
+    font-size: 40px;
+}
+.btn_two i:hover{
+    font-size: 30px;
+}
+
+#check:checked ~ .sidebar_menu{
+    left:0;
+}
+.sidebar_menu{
+    transition: 0.3s linear;
+}
+
+#check:checked ~ .btn_one i{
+    opacity:0;
+}
